@@ -36,6 +36,7 @@ header {
 }
 
 .logo {
+  font-family: 'Brightwall', cursive; /* Add this line */
   font-size: 2rem;
   color: #fff;
   text-decoration: none;
