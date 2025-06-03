@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KaysLuxe Hair Studio</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script defer src="script.js"></script>
+
+  <!-- Brightwall Font -->
+  <style>
+    @font-face {
+      font-family: 'Brightwall';
+      src: url('fonts/Brightwall.ttf') format('truetype');
+    }
+  </style>
+
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a2e0b1f59f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <div class="container nav-container">
+    <h1 class="logo">KaysLuxe</h1>
+    <!-- NAVIGATION -->
+<nav class="nav-links" id="nav-links">
+  <a href="#about">About</a>
+
+  <div class="dropdown">
+    <a href="#services">Services</a>
+    <div class="dropdown-content">
+      <a href="#services">Service Details</a>
+      <a href="#products">Explore Our Products Package</a>
+    </div>
+  </div>
+
+  <a href="#work">Our Work</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</header>
+<!-- Add this inside the body, maybe above the video section -->
+<a href="index.html" class="download-btn" style="margin-left: 20px;">← Back to Home</a>
+
+<!-- Our Products -->
+<section class="section" id="image-slides">
+  <h2>Explore Our Hair Products</h2>
+  <div class="swiper image-swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide image-slide">
+        <img src="product1.jpg" alt="26&quot; Jerry Curls" loading="lazy">
+        <p>Kaysluxe package sale  R250</p>
+      </div>
+
+      <div class="swiper-slide image-slide">
+        <img src="product2.jpg" alt="" loading="lazy">
+        <p>Iron R150</p>
+      </div>
+
+      <div class="swiper-slide image-slide">
+        <img src="product3.jpg" alt="2B Nice Glue" loading="lazy">
+        <p>Glue R55</p>
+      </div>
+
+      <div class="swiper-slide image-slide">
+        <img src="product4.jpg" alt="Mouse" loading="lazy">
+        <p>Mouse R65</p>
+      </div>
+
+    </div>
+
+    <!-- Swiper Controls -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+
+<!-- VIDEO GALLERY -->
+<section class="section" id="video-slides">
+  <h2>Preview of Kaysluxe Wigs</h2>
+  <div class="swiper video-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide video-slide">
+        <video controls poster="thumbnail1.jpg">
+          <source src="wig1.mp4" type="video/mp4">
+        </video>
+        <p>26" Jerry Curls R3050</p>
+      </div>
+      <div class="swiper-slide video-slide">
+        <video controls poster="thumbnail2.jpg">
+          <source src="wig2.mp4" type="video/mp4">
+        </video>
+        <p>SDD Bob R1500</p>
+      </div>
+      <div class="swiper-slide video-slide">
+        <video controls poster="thumbnail3.jpg">
+          <source src="wig3.mp4" type="video/mp4">
+        </video>
+        <p>14"  SDD R1700</p>
+      </div>
+
+      <div class="swiper-slide video-slide">
+        <video controls poster="thumbnail3.jpg">
+          <source src="Wig4.mp4" type="video/mp4">
+        </video>
+        <p>16" Pixie Curls R2050</p>
+      </div>
+
+      <div class="swiper-slide video-slide">
+        <video controls poster="thumbnail3.jpg">
+          <source src="wig5.mp4" type="video/mp4">
+        </video>
+        <p>Weave</p>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <p>&copy; 2025 KaysLuxe Hair Studio. All Rights Reserved.</p>
+  </div>
+</footer>
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</body>
+</html>
+
