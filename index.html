@@ -3,8 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KaysLux Hair</title>
+  <title>KaysLuxe Hair</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
   <script defer src="script.js"></script>
 
   <!-- Brightwall Font -->
@@ -17,19 +20,31 @@
 
   <!-- Font Awesome for icons -->
   <script src="https://kit.fontawesome.com/a2e0b1f59f.js" crossorigin="anonymous"></script>
+
+  <!-- Optional: preload hero background image for faster loading -->
+  <!-- <link rel="preload" as="image" href="Grouppicture.jpg"> -->
 </head>
 <body>
 
 <header>
   <div class="container nav-container">
     <h1 class="logo">KaysLuxe</h1>
+    <!-- NAVIGATION -->
     <nav class="nav-links" id="nav-links">
       <a href="#about">About</a>
-      <a href="#services">Services</a>
+
+      <div class="dropdown">
+        <a href="#services">Services</a>
+        <div class="dropdown-content">
+          <a href="#services">Service Details</a>
+          <a href="#products">Explore Our Products Package</a>
+        </div>
+      </div>
+
       <a href="#work">Our Work</a>
-      <a href="#appointment">Appointment</a>
       <a href="#contact">Contact</a>
     </nav>
+
     <div class="hamburger" id="hamburger">
       <span></span>
       <span></span>
@@ -42,11 +57,11 @@
 <section class="hero">
   <div class="hero-content">
     <h2>Luxury Hair, Crafted for Queens</h2>
-    <p>Experience the KaysLux difference.</p>
+    <p>Experience the KaysLuxe difference.</p>
   </div>
 </section>
 
-<!-- ABOUT -->
+<!-- ABOUT Page-->
 <section id="about" class="section">
   <div class="container">
     <h2>About Us</h2>
@@ -57,8 +72,7 @@
 
         With love,
 
-        Kaysluxe Hair Studio
-    </p>
+        Kaysluxe Hair Studio</p>
   </div>
 </section>
 
@@ -86,128 +100,110 @@
       </div>
     </div>
 
- <!-- Services Image Link -->
- <div style="text-align: center; margin-top: 30px;">
-    <a href="servicesoffered.jpg" target="_blank" class="download-btn">View Our Services</a>
-  </div>
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="servicesoffered.jpg" target="_blank" class="download-btn">View Our Services</a>
+    </div>
 
-<div style="text-align: center; margin-top: 30px;">
-    <a href="Kaysluxewiglaundry.jpg" target="_blank" class="download-btn">View Our Wig Laundry Services</a>
+    <div style="text-align: center; margin-top: 30px;">
+      <a href="Kaysluxewiglaundry.jpg" target="_blank" class="download-btn">View Our Wig Laundry Services</a>
+    </div>
+    <!-- PRODUCTS SECTION -->
+    <section id="products" class="section">
+      <div class="container">
+        <div style="text-align: center; margin-top: 30px;">
+          <h2>Our Product Packages</h2>
+          <p>Explore a curated collection of our premium hair products, bundle deals, and wig kits designed for every queen.</p>
+          <a href="product.html" class="download-btn" >Visit Full Product Page</a>
+        </div>
+      </div>
+    </section>
   </div>
-  
+</section>
+
 <!-- OUR WORK -->
 <section id="work" class="section">
   <div class="container">
     <h2>Our Work</h2>
     <div class="gallery" id="gallery">
-      <img src="FriendBack.jpg" alt="Work 1" onclick="openGalleryPage()">
-      <img src="ZiweFrontPicture.jpg" alt="Work 2" onclick="openGalleryPage()">
-      <img src="Ziwerotation.jpg" alt="Work 3" onclick="openGalleryPage()">
-      <img src="FriendPictureFront'.jpg" alt="Work 4" onclick="openGalleryPage()">
-      <img src="ZiweBackpicture.jpg" alt="Work 5" onclick="openGalleryPage()">
-      <img src="FriendSide.jpg" alt="Work 6" onclick="openGalleryPage()">
-      <img src="FriendSideProfile.jpg" alt="Work 7" onclick="openGalleryPage()">
-      
+      <img src="FriendBack.jpg" alt="Work 1" loading="lazy" onclick="openGalleryPage()">
+      <img src="ZiweFrontPicture.jpg" alt="Work 2" loading="lazy" onclick="openGalleryPage()">
+      <img src="Ziwerotation.jpg" alt="Work 3" loading="lazy" onclick="openGalleryPage()">
+      <img src="FriendPictureFront.jpg" alt="Work 4" loading="lazy" onclick="openGalleryPage()">
+      <img src="ZiweBackpicture.jpg" alt="Work 5" loading="lazy" onclick="openGalleryPage()">
+      <img src="FriendSide.jpg" alt="Work 6" loading="lazy" onclick="openGalleryPage()">
+      <img src="FriendSideProfile.jpg" alt="Work 7" loading="lazy" onclick="openGalleryPage()">
+      <img src="Img1.jpg" alt="Work 8" loading="lazy" onclick="openGalleryPage()">
+      <img src="Img2.jpg" alt="Work 9" loading="lazy" onclick="openGalleryPage()">
+      <img src="Img3.jpg" alt="Work 10" loading="lazy" onclick="openGalleryPage()">
+      <img src="Img4.jpg" alt="Work 11" loading="lazy" onclick="openGalleryPage()">
     </div>
   </div>
 </section>
-
-<!-- APPOINTMENT -->
-<section id="appointment" class="section">
-  <div class="container">
-    <h2>Book an Appointment</h2>
-    <form action="https://formspree.io/f/mnqewqvd" method="POST" class="appointment-form">
-      <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
-      <input type="date" name="date" required />
-      <select name="service" required>
-        <option value="">Select a Service</option>
-        <option value="hair-extensions">Hair Extensions</option>
-        <option value="custom-wig">Custom Wig</option>
-        <option value="weave-installation">Weave Installation</option>
-        <option value="wig-laundry">Wig Laundry</option>
-      </select>
-      <button type="submit">Book Now</button>
-    </form>
-  </div>
-</section>
-
 
 <!-- CONTACT -->
 <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact Us</h2>
-  
-      <div class="contact-info">
-        <a href="mailto:sisandakhathi@icloud.com" class="contact-link" target="_blank">
-          <ion-icon name="mail-outline"></ion-icon>
-          <span>Email: sisandakhathi@icloud.com</span>
-        </a>
-  
-        <a href="tel:0692646344" class="contact-link">
-          <ion-icon name="call-outline"></ion-icon>
-          <span>Phone: 0692646344</span>
-        </a>
-  
-        <a href="https://www.instagram.com/kaysluxe.hair?igsh=ZXh1bGdvZ2Y1ZTdr" class="contact-link" target="_blank">
-          <ion-icon name="logo-instagram"></ion-icon>
-          <span>Instagram: Kaysluxe Hair Studio</span>
-        </a>
-  
-        <a href="https://wa.me/0692646344" class="contact-link" target="_blank">
-          <ion-icon name="logo-whatsapp"></ion-icon>
-          <span>WhatsApp: Kaysluxe Hair Studio</span>
-        </a>
-  
-        <a href="https://www.tiktok.com/@kaysluxe.hairstudio?_t=ZM-8vugssx3ItK&_r=1" class="contact-link" target="_blank">
-          <ion-icon name="logo-tiktok"></ion-icon>
-          <span>TikTok: Kaysluxe Hair Studio</span>
-        </a>
-      </div>
-  
-      <!-- Ionicons Script -->
-      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <a href="mailto:sisandakhathi@icloud.com" class="contact-link" target="_blank">
+        <ion-icon name="mail-outline"></ion-icon>
+        <span>Email: sisandakhathi@icloud.com</span>
+      </a>
+      <a href="tel:0692646344" class="contact-link">
+        <ion-icon name="call-outline"></ion-icon>
+        <span>Phone: 0692646344</span>
+      </a>
+      <a href="https://www.instagram.com/kaysluxe.hair?igsh=ZXh1bGdvZ2Y1ZTdr" class="contact-link" target="_blank">
+        <ion-icon name="logo-instagram"></ion-icon>
+        <span>Instagram: Kaysluxe Hair Studio</span>
+      </a>
+      <a href="https://wa.me/+27692646344" class="contact-link" target="_blank">
+        <ion-icon name="logo-whatsapp"></ion-icon>
+        <span>WhatsApp: Kaysluxe Hair Studio</span>
+      </a>
+      <a href="https://www.tiktok.com/@kaysluxe.hairstudio?_t=ZM-8vugssx3ItK&_r=1" class="contact-link" target="_blank">
+        <ion-icon name="logo-tiktok"></ion-icon>
+        <span>TikTok: Kaysluxe Hair Studio</span>
+      </a>
     </div>
-  </section>
-  
-  
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </div>
+</section>
 
-<!-- CLIENT REVIEWS -->
+<!-- REVIEWS -->
 <section id="reviews" class="section">
-    <div class="container">
-      <h2>Client Reviews</h2>
-      <div class="reviews-grid">
-        
-        <div class="review-card">
-          <img src="FriendBack.jpg" alt="Client 1" class="review-img" />
-          <p>"Absolutely love my unit from KaysLux! The quality is unmatched."</p>
-          <h4>- Andiswa</h4>
-        </div>
-        
-        <div class="review-card">
-          <img src="ZiweBackpicture.jpg" alt="Client 2" class="review-img" />
-          <p>"The customization was spot on! Everyone keeps asking where I got my hair."</p>
-          <h4>- Sisanda</h4>
-        </div>
-        
-        <div class="review-card">
-          <img src="Ziwesidepicture.jpg" alt="Client 3" class="review-img" />
-          <p>"I love how soft and luxurious the hair feels. I’ll definitely be back!"</p>
-          <h4>- Ziwe</h4>
-        </div>
-  
+  <div class="container">
+    <h2>Client Reviews</h2>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <img src="FriendBack.jpg" alt="Client 1" class="review-img" loading="lazy" />
+        <p>"Absolutely love my unit from KaysLux! The quality is unmatched."</p>
+        <h4>- Andiswa</h4>
+      </div>
+      <div class="review-card">
+        <img src="ZiweBackpicture.jpg" alt="Client 2" class="review-img" loading="lazy" />
+        <p>"The customization was spot on! Everyone keeps asking where I got my hair."</p>
+        <h4>- Sisanda</h4>
+      </div>
+      <div class="review-card">
+        <img src="Ziwesidepicture.jpg" alt="Client 3" class="review-img" loading="lazy" />
+        <p>"I love how soft and luxurious the hair feels. I’ll definitely be back!"</p>
+        <h4>- Ziwe</h4>
       </div>
     </div>
-  </section>
-  
-  
+  </div>
+</section>
 
 <footer>
   <div class="container">
     <p>&copy; 2025 KaysLuxe Hair Studio. All Rights Reserved.</p>
   </div>
 </footer>
+
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </body>
 </html>
