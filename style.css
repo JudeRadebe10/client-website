@@ -520,3 +520,49 @@ a:focus, button:focus, input:focus, select:focus {
   outline: 3px solid #ff69b4;
   outline-offset: 2px;
 }
+
+/* Swiper image product slider */
+.image-swiper {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.image-slide {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-slide img {
+  width: 300px;
+  height: 300px; /* Fixed height added */
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 105, 180, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.image-slide img:hover {
+  transform: scale(1.05);
+}
+
+.image-slide p {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ff69b4;
+  font-weight: bold;
+}
+
+/* Adjust Swiper buttons color */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ff69b4;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #ff69b4;
+}
